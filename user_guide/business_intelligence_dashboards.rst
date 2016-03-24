@@ -3,17 +3,42 @@
 Dashboards
 ==========
 
-Dashboard is an adjustable view that contains a number of widgets, such as today's calendar, recent calls and emails, 
-quick launchpad etc. 
-Within one OroCRM instance you can create several dashboards for different purposes and switch between them.
+Dashboards are adjustable views that contains a number of widgets to display metrics and pipelines, and to gain quick 
+access to regularly used activities, such as today's calendar, recent calls and emails, quick launchpad etc. 
 
-Create a Dashboard
-------------------
+If permitted by the company's :ref:`access settings <user-guide-user-management-permissions-basic>`, OroCRM users can 
+create numerous dashboards, configure each of them, and switch between them. This way each dashboard can be sharpened 
+to specific needs, e.g. one for e-commerce, one for business-to-business sales and one for internal work-related issues.
 
-To create a dashboard:
+Once you have created a dashboard, it will be available for all the users who have corresponding permissions. This way 
+the same dashboard can be used by all the members of a team, and a head of a department can 
+develop a dashboard that will be used by all of the employees.
 
-- Go to the Dashboards section (in the Desktop UI it is signed with the icon |IcDashboard|) and select *"Manage 
-  Dashboards"*.
+From this article you can learn how to create and configure dashboards and define the users, to which it will be 
+available.
+
+Create a New Dashboard
+----------------------
+
+There are two ways to **start creating a new dashboard**
+
+You can: 
+
+- Go to the Dashboards section (in the Desktop UI it is signed with the icon |IcDashboard|).
+  
+- Click the :guilabel:`Tools` button in the top right corner of the grid.
+
+- Click *"Create"*.
+
+|
+
+.. image:: ./img/dashboards/dashboard_create.png
+
+|
+
+Or:
+
+- Go to the Dashboards section and select *"Manage Dashboards"*.
   
 - Click the :guilabel:`Create Dashboard` button in the top right corner of the grid.
 
@@ -51,23 +76,6 @@ from the Blank Dashboard will be empty).
 Manage Dashboard
 ----------------
 
-Switch Between Dashboards
-^^^^^^^^^^^^^^^^^^^^^^^^^
-
-You can switch to a dashboard in one of the two ways:
-
-- Use the drop-down menu under the Dashboards section
- 
-  |SectionDropD|
-
-|
-  
-- Use the drop-down menu in the header of the Dashboard page.
- 
-  |HeaderDropD|
-
-|
-  
 Add Widgets to a Dashboard
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -85,11 +93,11 @@ In order to add a widget to a Dashboard:
 
   For each widget you can see its name and brief description:
 
-      |
+  |
   
-|WidgetList|
+  |WidgetList|
 
-|
+  |
   
 - Choose the widget that you want to add and click the :guilabel:`Add` button.
 
@@ -98,6 +106,9 @@ In order to add a widget to a Dashboard:
     There is a number of dashboards pre-implemented in OroCRM out-of-the-box. Additional widgets can be added in the 
     course of the system integration.
 
+
+Description of all the available widgets and their settings is available in the 
+:ref:`Widget List <user-guide-widget-list>`
   
 Manage Widgets on a Dashboard
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -128,9 +139,32 @@ The header of each widget (above) contains (from left to right):
   
   - Other widget details if any.
 
-      |  
+  |  
   
-|ManageWidget|
+  |ManageWidget|
+
+  |
+  
+Switch Between Dashboards
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+You can switch to a dashboard in one of the two ways:
+
+- Use the drop-down menu under the Dashboards section
+
+  |
+  
+  |SectionDropD|
+
+  |
+  
+- Use the drop-down menu in the header of the Dashboard page.
+ 
+  |
+  
+  |HeaderDropD|
+
+  |
 
 
 Dashboard Tools

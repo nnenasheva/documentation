@@ -3,11 +3,15 @@
 Business Intelligence Tools
 ===========================
 
-OroCRM comes with a set of data analysis tools to help users make more informed decisions. 
+OroCRM’s business intelligence tools will help you organize data and improve your decision-making process:
 
-With numerous dedicated widgets, the users can easily access and analyze all the necessary information in order to keep 
-track of any important changes and updates. For instance, reports provide an understanding of historical data and 
-related trends, and segmentation tools help users focus on a specific part of their data.
+- Use predefined widgets to create informative dashboards to display metrics and pipelines, and to gain quick access to 
+  regularly used activities
+
+- Analyze and visualize historical data and trends with reports
+
+- Narrow down the exact segment of data you’re looking for with segmentation 
+
 
 * :doc:`/user_guide/business_intelligence_dashboards`
 * :doc:`/user_guide/business_intelligence_segments`
@@ -17,7 +21,8 @@ related trends, and segmentation tools help users focus on a specific part of th
 * :doc:`/user_guide/business_intelligence_reports`
   
 .. toctree::
-    :maxdepth: 2
+    :hidden:
+    :maxdepth: 1
 
     business_intelligence_dashboards
     business_intelligence_segments

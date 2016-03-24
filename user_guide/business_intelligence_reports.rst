@@ -3,10 +3,10 @@
 Reports
 =======
 
-In OroCRM, you can create reports based on the details of any entity available in the system. 
-
-Using this functionality, you can get easy-to-understand adjustable reports on the amount and activity of different 
-customers, on statuses of carts and current state of actual and potential sales, on the performance of your 
+OroCRM’s reports help to analyze and visualize historical data and trends to organize data and improve your 
+decision-making process. The reports can be based on the details of any entity available in the system. For example,
+you can get easy-to-understand adjustable reports on the amount and activity of different customers, on statuses of 
+carts and current state of actual and potential sales, on the performance of your 
 :ref:`marketing effort <user-guide-marketing>`, specifics of recent :ref:`activities <user-guide-activities>`, etc.
 
 There is a number of out-of-the-box reports, such as :ref:`Leads by Date <user-guide-leads-reports>` and 
@@ -20,6 +20,8 @@ The article describes how to create and manage custom reports.
 Create Custom Reports
 ---------------------
 
+In order to create a report, you need to:
+
 - Go to *Reports and Segments → Manage Custom Reports* and click the :guilabel:`Create Report` button.
 
 - The *"Create Report""* page will appear.
@@ -29,12 +31,13 @@ Create Custom Reports
 
 .. _user-guide-reports-general-settings:
 
-General Setting
-^^^^^^^^^^^^^^^
+Define General Details
+^^^^^^^^^^^^^^^^^^^^^^
 
       |
  
-The following fields are mandatory and **must** be defined for a report:
+First of all you need to define the basic details of the report, particularly, what users will be able to see and manage
+it. The following fields are mandatory and **must** be defined for any report:
 
 .. csv-table::
   :header: "Field","Description"
@@ -42,7 +45,7 @@ The following fields are mandatory and **must** be defined for a report:
 
   "**Name***","The name is used to refer to the report in the future.
   
-  It is recommended to use a name that is meaningful for you."
+  It is recommended to keep it meaningful."
   "**Entity***","Target :term:`entity <Entity>` of the report. Choose one of the entities from the drop-down. Data
   related to it will be used to generate the report. 
   (Both system and custom entities will be displayed in the alphabetic order). 
@@ -51,17 +54,16 @@ The following fields are mandatory and **must** be defined for a report:
   "**Owner***","Limits the list of users that can manage the report, subject to the 
   :ref:`access and permission settings <user-guide-user-management-permissions>`."
 
-The only optional system field, *"*Description**, can be used to save additional information about the report. 
+The only optional system field, *"Description"*, can be used to save additional information about the report. 
 
 
 .. _user-guide-reports-designer:
 
-Designer
-^^^^^^^^
-
+Define the Report Structure
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
       |
   
-In the section you can define the structure of your report.
+To define the report's structure go to the "Designer" section.
 
       |
  
@@ -79,6 +81,8 @@ There are three main parts:
 
 *Columns*
 ^^^^^^^^^
+
+|
 
 The following settings shall be defined for each column of the report:
 
@@ -131,15 +135,19 @@ The following settings shall be defined for each column of the report:
   
 Actions for Columns
 """""""""""""""""""
+
+|
     
-Once you have specified the settings for a column element, click the :guilabel:`Add` button, and the field you have defined 
-will appear in the "COLUMN" grid.
+Once you have specified the settings for a column element, click the :guilabel:`Add` button, and the field you have 
+defined will appear in the "COLUMN" grid.
 
 Now you can edit (|IcEdit|), delete (|IcDelete|) or move (|IcMove|) the column. 
 
 
-Examples of Columns and Actions 
-"""""""""""""""""""""""""""""""
+Examples of Functions and Actions Applied to Columns  
+""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+|
 
 For the sake of example, we have created a very simple report of one field. It contains only the budget amount details. 
 
@@ -159,7 +167,7 @@ On the View page of the report, you would see something like this:
 
 |
 
-There are 75 opportunities with the values defined in the *"Budget Amount"* field of each and all of them will be
+There are 75 opportunities with the values defined in the *"Budget Amount"* field, and all of them will be
 displayed in the report.
 
 Click :guilabel:`Edit` to return to the report settings. Let's see, how the report changes, if we apply different 
@@ -233,8 +241,8 @@ The report will look as follows:
 Several Level Grouping Example
 """"""""""""""""""""""""""""""
 
-You can also group records inside a group. For example, we can add one more grouping field (e.g. Customer name) to our 
-report.
+You can also group records inside a group. For example, we can add one more grouping field to group the report by the 
+customer name.
 
       |
   
@@ -271,10 +279,10 @@ that were lost. You can view the budget details for the both groups.
 Filters
 ^^^^^^^
 
+|
+
 You can define conditions used to select specific records. Only data of the records that meet all the conditions defined
 in the *"Filters"* section will be used for the report. 
-
-For example, you can create a report only for those customers, who appeared within the last month and live in Texas.
 
 Please see the :ref:`Filters guide <user-guide-filters-management>` for more details.
 
@@ -283,6 +291,8 @@ Please see the :ref:`Filters guide <user-guide-filters-management>` for more det
 
 Chart
 ^^^^^
+
+|
 
 OroCRM supports line charts. To create a line chart for the report, go to the **Chart** and define the following 
 fields (all the fields are mandatory and **must** be defined).
@@ -300,12 +310,15 @@ Chart Example
 
 Let's make a chart for the Budget per opportunity status report (not grouped by customers). 
 
+|
 
 .. image:: ./img/reports/RepExChart1.png
 
+|
 
 .. image:: ./img/reports/RepExChart2.png
 
+|
 
 Manage Reports
 --------------
@@ -314,6 +327,8 @@ The following actions can be performed for a report:
 
 - From the *"All Reports"* :ref:`grid <user-guide-ui-components-grids>` (*Report & Segments → Manage Custom Reports*):
 
+  |
+  
   |ReportActionIcon|
 
   |
@@ -330,11 +345,11 @@ The following actions can be performed for a report:
   
 - From the :ref:`View page <user-guide-ui-components-view-pages>`:
   
-- Get to the *"Edit"* form of the report
+  - Get to the *"Edit"* form of the report
 
-- Delete the report from the system 
+  - Delete the report from the system 
 
-- Export the report data into a CSV format: click the *Export Grid* button. 
+  - Export the report data into a CSV format: click the *Export Grid* button. 
  
 
 .. note::
