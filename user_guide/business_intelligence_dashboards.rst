@@ -14,8 +14,7 @@ Once you have created a dashboard, it will be available for all the users who ha
 the same dashboard can be used by all the members of a team, and a head of a department can 
 develop a dashboard that will be used by all of the employees.
 
-From this article you can learn how to create and configure dashboards and define the users, to which it will be 
-available.
+From this article you can learn how to create and configure dashboards and define the users that will have access to it.
 
 Create a New Dashboard
 ----------------------

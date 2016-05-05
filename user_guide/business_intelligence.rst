@@ -14,6 +14,9 @@ OroCRM’s business intelligence tools will help you organize data and improve y
 
 
 * :doc:`/user_guide/business_intelligence_dashboards`
+
+  * :doc:`/user_guide/business_intelligence_dashboards_widget_list`
+
 * :doc:`/user_guide/business_intelligence_segments`
 
   * :doc:`/user_guide/business_intelligence_filters`
@@ -25,6 +28,7 @@ OroCRM’s business intelligence tools will help you organize data and improve y
     :maxdepth: 1
 
     business_intelligence_dashboards
+    business_intelligence_dashboards_widget_list
     business_intelligence_segments
     business_intelligence_filters
     business_intelligence_reports
