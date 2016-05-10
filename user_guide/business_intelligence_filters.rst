@@ -8,6 +8,8 @@ you sometimes need to select a set of records to be *processed* in different are
 :ref:`Marketing List <user-guide-marketing-lists>` or a :ref:`Report <user-guide-reports>`. In this case,
 there is a *"Filters"* section.
 
+|filters_0|
+
 It settings are used to automatically select only those records of the entity that meet the filter requirements.
 
 Filters are always created for records of a specific :term:`entity <Entity>` specified in the general details of the 
@@ -72,7 +74,7 @@ To define a field condition:
 - A drop-down will appear. At the top of the drop-down menu, you can see the name of the :term:`entity <Entity>`, for 
   which the records are filtered. (In the example below it is a Contact). Below the entity name there is a list of all
   the  of the chosen entity. Below the list of fields, is a list of related entities (entities 
-  that have a :ref:relation <user-guide-entity-management-create-relation> with the filtered entity.)
+  that have a :ref:`relation <user-guide-entity-management-create-relation>` with the filtered entity.)
   
   |field_condition_fields|
 
@@ -136,7 +138,7 @@ To define the *"Activity"* setting:
 
     |
 
-  - List if available activities to filter by. 
+  - List of available activities to filter by. 
   
     |activity_selector_2|
 
@@ -205,8 +207,7 @@ Segments
 --------
 
 Segment is a set of Activity and/or Data audit and/or Field Condition and/or Condition Group filters created separately
-:ref:` <user-guide-filters-segments>` for records of a specific entity, and updated dynamically or 
-upon a direct user's request.
+for records of a specific entity, and updated dynamically or upon a direct user's request.
 
 In other words, if you often need to use a specific set of conditions to filter the entity records, you can create a 
 segment and use it instead of redefining the same conditions time and again.
@@ -216,7 +217,7 @@ The ways to create and manage segments are described in more details in the
 
 To add a Segment to the filters:
 
-- Drag "Apply segment" to the box on the right, 
+- Drag "Apply segment" to the box on the right
   
   |segments|
   
@@ -234,6 +235,14 @@ Subject to the conjunction with the rest of conditions the list will now contain
 
 - The records that correspond to the rest of conditions and the segment (OR is used)
      
+
+Additional Filter for Reports
+-----------------------------
+
+When creating a report, there is one more filter setting - Aggregation Column. You can use it to filter the records
+by the value of functions applied to the report columns. For example, if the report for an account contains a sum of 
+lifetime sales values for all of its customers, you can filter the records by these sum. The function is described in 
+more details in the relevant section of the reports guide.
    
 
 
@@ -264,3 +273,5 @@ Subject to the conjunction with the rest of conditions the list will now contain
 .. |activity_selector_2| image:: ./img/filters/acivity_selector_2.png
 
 .. |audit_selector_1| image:: ./img/filters/audit_selector_1.png
+
+.. |filters_0| image:: ./img/filters/filters_0.png

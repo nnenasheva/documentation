@@ -60,12 +60,12 @@ guide are most relevant for your work duties.
   * :doc:`/user_guide/business_intelligence_dashboards`
   
     * :doc:`/user_guide/business_intelligence_dashboards_widget_list`
-  
-  * :doc:`/user_guide/business_intelligence_segments`
 
-    * :doc:`/user_guide/business_intelligence_filters`
-  
   * :doc:`/user_guide/business_intelligence_reports`
+  * :doc:`/user_guide/business_intelligence_filters`
+  
+    * :doc:`/user_guide/business_intelligence_segments`
+
   
       |
   

@@ -217,7 +217,8 @@ status.
 
 .. caution:: 
 
-    Fields used for grouping must be added to the "*COLUMN"* section as well.
+    Fields used for grouping must be added to the *"COLUMN"* section, and all the fields used in the *"COLUMN"* with 
+	*function = none* must be added to the *"GROUPING"* section
 
       |
   
@@ -262,7 +263,7 @@ then you will see data for all the *"Won"* opportunities of each customer, etc.
 .. hint::
 
     Once a report has been generated, you can click on the name of a column, to sort all the data in the report by the
-    specified fields' value (ascending or descending). You can see the report ordered by the *"Name"* value below.
+    specified field's value (ascending or descending). You can see the report ordered by the *"Name"* value below.
 
 .. image:: ./img/reports/RepEx3b.png
 
@@ -285,6 +286,47 @@ You can define conditions used to select specific records. Only data of the reco
 in the *"Filters"* section will be used for the report. 
 
 Please see the :ref:`Filters guide <user-guide-filters-management>` for more details.
+
+A filter specific for reports is *"Aggregation Column"*. It is used to filter the records by the value resulting from a 
+function applied to a field. For example, you can select only the records, for which the maximum value of a specific 
+field is bigger than zero, average is less than 100, etc.
+
+For the sake of example, we have created a report for accounts and want it to be displayed only for those accounts, 
+for which the sum of all the magento customer's lifetime sales values is more than a million.
+
+
+|
+
+.. image:: ./img/reports/report_filter_1.png
+
+|
+
+Our report has a column - sum of magento customers' lifetime sales values. In order to filter out only those records, 
+for which this value is over a million, use the *"Aggregation Column"* filter:
+
+  - Drag :guilabel:`Aggregation Column` to the filters section
+  
+    |
+  
+   |ReportFilter2|
+   
+   |
+   
+  - Select the column name in the selector   
+  
+    |ReportFilter3|
+
+	|
+	
+  - Define the condition for the function values. 
+
+    |
+
+    |ReportFilter4|
+
+    |	
+
+Only records that meet this condition will be used for the report.
 
 
 .. _user-guide-reports-chart:
@@ -378,4 +420,13 @@ The following actions can be performed for a report:
    :align: middle
    
 .. |ReportActionIcon| image:: ./img/reports/report_action_icons.png
+   :align: middle
+   
+.. |ReportFilter2| image:: ./img/reports/report_filter_2.png
+   :align: middle
+   
+.. |ReportFilter3| image:: ./img/reports/report_filter_3.png
+   :align: middle
+   
+.. |ReportFilter4| image:: ./img/reports/report_filter_4.png
    :align: middle
